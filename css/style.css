@@ -881,3 +881,226 @@ body {
     }
 }
 
+
+/* Hotels Section */
+.hotels {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.hotels-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.destination-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.hotel-card {
+    background: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-blue);
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.hotel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.hotel-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.hotel-rating {
+    color: var(--secondary-orange);
+    font-size: 1rem;
+}
+
+.hotel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hotel-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.hotel-price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.hotel-location {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.hotel-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hotel-features .feature {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hotel-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Agencies Section */
+.agencies {
+    padding: 6rem 0;
+    background: var(--light-gray);
+}
+
+.agencies-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.agencies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.agency-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    border-left: 4px solid var(--tertiary-green);
+}
+
+.agency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.agency-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.agency-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.agency-rating {
+    color: var(--secondary-orange);
+    font-size: 1rem;
+}
+
+.agency-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.agency-specialty {
+    background: var(--tertiary-green);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.agency-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.agency-price span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.agency-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.agency-services .service {
+    background: var(--light-gray);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.agency-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .hotels-grid,
+    .agencies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hotel-info,
+    .agency-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .hotel-price,
+    .agency-price {
+        font-size: 1.25rem;
+    }
+}
+
