@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Épica: Florianópolis ao Atacama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Aventura Épica</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#itinerary" class="nav-link">Itinerário</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#budget" class="nav-link">Orçamento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#destinations" class="nav-link">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tips" class="nav-link">Dicas</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-main">Aventura Épica</span>
+                    <span class="title-sub">Florianópolis ao Atacama</span>
+                </h1>
+                <p class="hero-subtitle">7 dias inesquecíveis • 2 pessoas • R$ 10.000</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">✈️</div>
+                        <span>Voos inclusos</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🏨</div>
+                        <span>Hospedagem selecionada</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🗺️</div>
+                        <span>Roteiro completo</span>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('itinerary')">
+                    Explore o Itinerário
+                    <span class="button-arrow">→</span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary" class="itinerary">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Itinerário Detalhado</h2>
+                <p class="section-subtitle">Cada dia planejado para maximizar sua experiência</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-day="1">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">1</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Chegada em Santiago</h3>
+                                <span class="card-cost">R$ 200</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Voo Florianópolis → Santiago. Check-in no hotel e primeira exploração da cidade.</p>
+                                <div class="card-activities">
+                                    <span class="activity">✈️ Voo FLN-SCL</span>
+                                    <span class="activity">🏨 Check-in hotel</span>
+                                    <span class="activity">🚶 Caminhada exploratória</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="2">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">2</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Centro Histórico de Santiago</h3>
+                                <span class="card-cost">R$ 370</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Exploração do centro histórico, Plaza de Armas, Palácio de La Moneda e Cerro San Cristóbal.</p>
+                                <div class="card-activities">
+                                    <span class="activity">🏛️ Plaza de Armas</span>
+                                    <span class="activity">🏔️ Cerro San Cristóbal</span>
+                                    <span class="activity">🍽️ Mercado Central</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="3">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">3</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Cultura e Parques</h3>
+                                <span class="card-cost">R$ 290</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Visita aos parques da cidade, museus e feira de artesanato. Dia mais relaxante.</p>
+                                <div class="card-activities">
+                                    <span class="activity">🌳 Parque Metropolitano</span>
+                                    <span class="activity">🎨 Feira Santa Lucía</span>
+                                    <span class="activity">🛍️ Compras de souvenirs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="4">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">4</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Viagem para o Atacama</h3>
+                                <span class="card-cost">R$ 420</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Voo Santiago → Calama e transfer para San Pedro de Atacama. Aclimatação à altitude.</p>
+                                <div class="card-activities">
+                                    <span class="activity">✈️ Voo SCL-CJC</span>
+                                    <span class="activity">🚌 Transfer para SPA</span>
+                                    <span class="activity">🏨 Check-in Atacama</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="5">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">5</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Vale da Lua e Vale da Morte</h3>
+                                <span class="card-cost">R$ 600</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Passeio clássico aos vales lunares com pôr do sol espetacular no deserto.</p>
+                                <div class="card-activities">
+                                    <span class="activity">🌙 Vale da Lua</span>
+                                    <span class="activity">💀 Vale da Morte</span>
+                                    <span class="activity">🌅 Pôr do sol</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="6">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">6</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Lagunas Altiplânicas</h3>
+                                <span class="card-cost">R$ 660</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Excursão às lagoas de alta altitude com paisagens deslumbrantes e vida selvagem.</p>
+                                <div class="card-activities">
+                                    <span class="activity">🏔️ Lagunas Miscanti</span>
+                                    <span class="activity">🦩 Flamingos</span>
+                                    <span class="activity">📸 Fotografia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-day="7">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">7</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <h3>Retorno</h3>
+                                <span class="card-cost">R$ 50</span>
+                            </div>
+                            <div class="card-body">
+                                <p>Transfer para Calama e voos de retorno para Florianópolis via Santiago.</p>
+                                <div class="card-activities">
+                                    <span class="activity">🚌 Transfer CJC</span>
+                                    <span class="activity">✈️ Voo CJC-SCL-FLN</span>
+                                    <span class="activity">🏠 Chegada em casa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Section -->
+    <section id="budget" class="budget">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Orçamento Detalhado</h2>
+                <p class="section-subtitle">Transparência total nos custos da viagem</p>
+            </div>
+            
+            <div class="budget-overview">
+                <div class="budget-total">
+                    <div class="total-amount">R$ 10.000</div>
+                    <div class="total-label">Total para 2 pessoas</div>
+                </div>
+                
+                <div class="budget-breakdown">
+                    <div class="budget-category">
+                        <div class="category-header">
+                            <div class="category-icon">✈️</div>
+                            <div class="category-info">
+                                <h3>Voos</h3>
+                                <span class="category-amount">R$ 1.900</span>
+                            </div>
+                        </div>
+                        <div class="category-details">
+                            <div class="detail-item">
+                                <span>FLN ↔ SCL</span>
+                                <span>R$ 1.400</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>SCL ↔ CJC</span>
+                                <span>R$ 500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="budget-category">
+                        <div class="category-header">
+                            <div class="category-icon">🏨</div>
+                            <div class="category-info">
+                                <h3>Hospedagem</h3>
+                                <span class="category-amount">R$ 3.500</span>
+                            </div>
+                        </div>
+                        <div class="category-details">
+                            <div class="detail-item">
+                                <span>Santiago (4 noites)</span>
+                                <span>R$ 1.600</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Atacama (3 noites)</span>
+                                <span>R$ 1.900</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="budget-category">
+                        <div class="category-header">
+                            <div class="category-icon">🍽️</div>
+                            <div class="category-info">
+                                <h3>Alimentação</h3>
+                                <span class="category-amount">R$ 2.100</span>
+                            </div>
+                        </div>
+                        <div class="category-details">
+                            <div class="detail-item">
+                                <span>Média R$ 300/dia</span>
+                                <span>7 dias</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="budget-category">
+                        <div class="category-header">
+                            <div class="category-icon">🎯</div>
+                            <div class="category-info">
+                                <h3>Atividades & Transporte</h3>
+                                <span class="category-amount">R$ 2.500</span>
+                            </div>
+                        </div>
+                        <div class="category-details">
+                            <div class="detail-item">
+                                <span>Santiago (4 dias)</span>
+                                <span>R$ 1.000</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Atacama (3 dias)</span>
+                                <span>R$ 1.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="budget-chart">
+                <canvas id="budgetChart"></canvas>
+            </div>
+
+            <div class="savings-tips">
+                <h3>💡 Dicas de Economia</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🏨</div>
+                        <h4>Hospedagem</h4>
+                        <p>Escolha hotéis em bairros centrais para economizar em transporte</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🍽️</div>
+                        <h4>Alimentação</h4>
+                        <p>Experimente os mercados locais e menus do dia (almuerzo)</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🎯</div>
+                        <h4>Passeios</h4>
+                        <p>Compare preços entre agências locais em San Pedro de Atacama</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">💰</div>
+                        <h4>Câmbio</h4>
+                        <p>Leve dólares e troque por pesos chilenos no destino</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Destinos Incríveis</h2>
+                <p class="section-subtitle">Descubra as maravilhas de Santiago e Atacama</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card santiago">
+                    <div class="destination-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santiago do Chile</h3>
+                        <p>Capital cosmopolita cercada pela majestosa Cordilheira dos Andes. Uma cidade que combina perfeitamente tradição e modernidade.</p>
+                        <div class="destination-highlights">
+                            <span class="highlight">🏛️ Centro Histórico</span>
+                            <span class="highlight">🏔️ Cerro San Cristóbal</span>
+                            <span class="highlight">🍷 Vinícolas próximas</span>
+                            <span class="highlight">🎨 Vida cultural rica</span>
+                        </div>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">dias</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15°C</span>
+                                <span class="stat-label">temperatura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card atacama">
+                    <div class="destination-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Deserto do Atacama</h3>
+                        <p>O deserto mais árido do mundo oferece paisagens surreais, céus estrelados únicos e experiências inesquecíveis.</p>
+                        <div class="destination-highlights">
+                            <span class="highlight">🌙 Vale da Lua</span>
+                            <span class="highlight">🏔️ Lagunas Altiplânicas</span>
+                            <span class="highlight">⭐ Céu estrelado</span>
+                            <span class="highlight">🦩 Flamingos</span>
+                        </div>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">dias</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2400m</span>
+                                <span class="stat-label">altitude</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dicas Essenciais</h2>
+                <p class="section-subtitle">Informações importantes para uma viagem perfeita</p>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-category">
+                    <div class="category-icon">📋</div>
+                    <h3>Documentação</h3>
+                    <ul>
+                        <li>RG ou passaporte válido</li>
+                        <li>Seguro viagem (recomendado)</li>
+                        <li>Comprovante de vacinação</li>
+                        <li>Cartão de crédito internacional</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <div class="category-icon">🧳</div>
+                    <h3>O que levar</h3>
+                    <ul>
+                        <li>Roupas para frio (Santiago)</li>
+                        <li>Protetor solar fator 60+</li>
+                        <li>Óculos de sol</li>
+                        <li>Medicamentos para altitude</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <div class="category-icon">💰</div>
+                    <h3>Dinheiro</h3>
+                    <ul>
+                        <li>Moeda: Peso Chileno (CLP)</li>
+                        <li>Leve dólares para câmbio</li>
+                        <li>Cartões aceitos na maioria dos locais</li>
+                        <li>Gorjeta: 10% em restaurantes</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <div class="category-icon">🌡️</div>
+                    <h3>Clima</h3>
+                    <ul>
+                        <li>Santiago: 10-20°C (inverno)</li>
+                        <li>Atacama: -5 a 25°C (amplitude)</li>
+                        <li>Sol forte em altitude</li>
+                        <li>Noites muito frias no deserto</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <div class="category-icon">🏥</div>
+                    <h3>Saúde</h3>
+                    <ul>
+                        <li>Hidrate-se constantemente</li>
+                        <li>Evite álcool nos primeiros dias</li>
+                        <li>Descanse ao chegar em altitude</li>
+                        <li>Leve remédios básicos</li>
+                    </ul>
+                </div>
+
+                <div class="tip-category">
+                    <div class="category-icon">📱</div>
+                    <h3>Conectividade</h3>
+                    <ul>
+                        <li>Chip local ou roaming</li>
+                        <li>WiFi disponível na maioria dos hotéis</li>
+                        <li>Apps úteis: Uber, Google Translate</li>
+                        <li>Baixe mapas offline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aventura Épica</h3>
+                    <p>Sua jornada dos sonhos de Florianópolis ao Atacama, planejada nos mínimos detalhes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@aventuraepica.com</p>
+                    <p>📱 (48) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aventura Épica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
