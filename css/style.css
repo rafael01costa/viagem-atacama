@@ -1104,3 +1104,360 @@ body {
     }
 }
 
+
+/* Restaurants Section */
+.restaurants {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.restaurants-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.restaurant-card {
+    background: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary-orange);
+}
+
+.restaurant-card.premium {
+    border-left-color: gold;
+    background: linear-gradient(135deg, #fff9e6 0%, var(--light-gray) 100%);
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.restaurant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.restaurant-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.restaurant-rating {
+    font-size: 1rem;
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.restaurant-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondary-orange);
+}
+
+.restaurant-price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.restaurant-category {
+    background: var(--secondary-orange);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.restaurant-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.restaurant-features .feature {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Nightlife Section */
+.nightlife {
+    padding: 6rem 0;
+    background: var(--light-gray);
+}
+
+.nightlife-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.nightlife-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.nightlife-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    border-left: 4px solid #8b5cf6;
+}
+
+.nightlife-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nightlife-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nightlife-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.nightlife-type {
+    background: #8b5cf6;
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.nightlife-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.nightlife-location,
+.nightlife-hours {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.nightlife-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.nightlife-features .feature {
+    background: var(--light-gray);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nightlife-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.nightlife-note {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border-left: 4px solid #8b5cf6;
+}
+
+.nightlife-note h4 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.atacama-night-activities {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.night-activity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.activity-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    text-align: center;
+}
+
+.activity-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    min-width: 150px;
+}
+
+.activity-desc {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Attractions Section */
+.attractions {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.attractions-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.attraction-card {
+    background: var(--light-gray);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    border-left: 4px solid #10b981;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.attraction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.attraction-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.attraction-type {
+    background: #10b981;
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.attraction-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.attraction-entry,
+.attraction-time {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.attraction-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.attraction-features .feature {
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.attraction-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 768px) {
+    .restaurants-grid,
+    .nightlife-grid,
+    .attractions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .restaurant-info,
+    .nightlife-info,
+    .attraction-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .restaurant-price {
+        font-size: 1.25rem;
+    }
+    
+    .night-activity {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .activity-name {
+        min-width: auto;
+    }
+}
+
